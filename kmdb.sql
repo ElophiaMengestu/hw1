@@ -38,6 +38,33 @@
 -- - Selection of data, so that something similar to the sample "report"
 --   below can be achieved.
 
+CREATE TABLE guests (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT,
+    last_name TEXT
+);
+
+CREATE TABLE movies(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    year_released INTEGER,
+    MPAA_Rating TEXT,
+    Studio TEXT,
+    Character_name TEXT
+);
+
+CREATE TABLE studios(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    studio_name TEXT,
+    film_produced TEXT
+);
+
+CREATE TABLE characters(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Character_name TEXT,
+    real_name TEXT,
+    film_features TEXT
+);
 -- Rubric
 --
 -- 1. Domain model - 6 points

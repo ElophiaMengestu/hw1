@@ -1,0 +1,12 @@
+CREATE TABLE guests (
+    id INTERGER PRIMARY KEY AUTOINCREMENT
+)
+
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    year_released INTEGER,
+    MPAA_Rating INTEGER,
+    Studio TEXT,
+    Character_name TEXT
+);
